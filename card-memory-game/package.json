@@ -1,0 +1,13 @@
+{
+  "name": "card-memory-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple 6x6 card memory game with timer and best-time record.",
+  "scripts": {
+    "dev": "http-server -p 8000"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+

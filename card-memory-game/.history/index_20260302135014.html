@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Memory Game</title>
+    <link rel="stylesheet" href="css/styles.css?v=9" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Menu Screen -->
+      <section id="menu-screen" class="screen screen--active">
+        <h1 class="game-title">Card Memory Game</h1>
+        <div class="record-display">
+          <p class="record-label">Best Time:</p>
+          <p id="best-time-display" class="record-value">--:--</p>
+        </div>
+        <button id="start-button" class="btn btn--primary">Start Game</button>
+      </section>
+
+      <!-- Game Screen -->
+      <section id="game-screen" class="screen">
+        <div class="game-header">
+          <div class="timer-display">
+            <span class="timer-label">Time:</span>
+            <span id="timer-value" class="timer-value">00:00</span>
+          </div>
+          <button id="menu-button" class="btn btn--ghost">Menu</button>
+        </div>
+        <div id="game-board" class="game-board"></div>
+      </section>
+
+      <!-- Win Screen -->
+      <section id="win-screen" class="screen">
+        <div class="win-card">
+          <h2 class="win-title">YOU WIN!</h2>
+          <div class="win-stats">
+            <p class="win-time-label">Time:</p>
+            <p id="win-time-value" class="win-time-value">00:00</p>
+          </div>
+          <div class="win-buttons">
+            <button id="play-again-button" class="btn btn--primary">Play Again</button>
+            <button id="menu-button-win" class="btn btn--secondary">Back to Menu</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/main.js?v=5"></script>
+  </body>
+</html>
