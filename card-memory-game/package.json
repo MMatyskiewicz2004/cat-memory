@@ -2,7 +2,7 @@
   "name": "card-memory-game",
   "version": "1.0.0",
   "private": true,
-  "description": "Simple 6x6 card memory game with timer and best-time record.",
+  "description": "Cat Memory — 4×3 matching game with timer, best time, and GSAP card animations.",
   "scripts": {
     "dev": "http-server -p 8000"
   },

@@ -3,22 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card Memory Game</title>
-    <link rel="stylesheet" href="css/styles.css?v=14" />
+    <title>Cat Memory</title>
+    <link rel="stylesheet" href="css/styles.css?v=24" />
   </head>
+
   <body>
     <div class="app">
-      <!-- Menu Screen -->
       <section id="menu-screen" class="screen screen--active">
-        <h1 class="game-title">Card Memory Game</h1>
+        <div class="menu-title-block">
+          <img src="assets/title.PNG" alt="" class="menu-title-png" />
+          <h1 class="menu-title-text">Cat Memory</h1>
+        </div>
         <div class="record-display">
           <p class="record-label">Best Time:</p>
-            <p id="best-time-display" class="record-value">--:--.--</p>
+          <p id="best-time-display" class="record-value">--:--.--</p>
         </div>
         <button id="start-button" class="btn btn--primary">Start Game</button>
       </section>
 
-      <!-- Game Screen -->
       <section id="game-screen" class="screen">
         <div class="game-header">
           <div class="timer-display">
@@ -30,7 +32,6 @@
         <div id="game-board" class="game-board"></div>
       </section>
 
-      <!-- Win Screen -->
       <section id="win-screen" class="screen">
         <div class="win-card">
           <h2 class="win-title">YOU WIN!</h2>
@@ -46,7 +47,8 @@
       </section>
     </div>
 
+    <!-- I load GSAP first so my main.js can use gsap.to / gsap.killTweensOf for card motion -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="js/main.js?v=11"></script>
+    <script src="js/main.js?v=16"></script>
   </body>
 </html>
